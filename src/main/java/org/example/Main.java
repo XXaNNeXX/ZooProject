@@ -31,11 +31,15 @@ public class Main {
         Species species2 = new Species("Nager", 40);
 
         Animal cat3 = new Animal(cat.id(), cat.name(), cat.type(), cat.age(), owner1, species1);
+        Animal cat4 = new Animal(cat.id(), cat.name(), cat.type(), cat.age(), owner1, species1);
         Animal dog3 = new Animal(dog.id(), dog.name(), dog.type(), dog.age(), owner2, species1);
         Animal guineaPig3 = new Animal(guineaPig.id(), guineaPig.name(), guineaPig.type(), guineaPig.age(), owner3, species2);
 
         System.out.println(cat3);
         System.out.println(dog3);
         System.out.println(guineaPig3);
+        System.out.println(cat3.equals(cat4));
+        System.out.println(cat3.withID("987"));
+        System.out.println(guineaPig3.withSpecies(species1));
     }
 }
